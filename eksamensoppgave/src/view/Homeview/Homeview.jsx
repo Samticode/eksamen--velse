@@ -26,14 +26,14 @@ function Homeview(props) {
 
     function searchFunction(event) {
         event.preventDefault();
-        // const search = event.target.searchInput.value.toLowerCase();
-        // if (search === "") {
-        //     // If the search is empty, reset the solutions to the original list
-        //     setSolutions(originalSolutions);
-        // } else {
-        //     const searchResults = solutions.filter((solution) => solution.title.toLowerCase().includes(search));
-        //     setSolutions(searchResults);
-        // }
+        const search = event.target.searchInput.value.toLowerCase();
+        if (search === "") {
+            // If the search is empty, reset the solutions to the original list
+            setSolutions(originalSolutions);
+        } else {
+            const searchResults = solutions.filter((solution) => solution.title.toLowerCase().includes(search));
+            setSolutions(searchResults);
+        }
     }
 
     async function countView(id) {

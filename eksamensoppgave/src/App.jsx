@@ -5,7 +5,7 @@ import Homeview from './view/Homeview/Homeview';
 import EditorView from './view/EditorView/EditorView';
 
 function App() {
-    let [State, setState] = useState(1);
+    let [State, setState] = useState(0);
     let [CurrentUser, setCurrentUser] = useState({});
     let viewableComponent = <></>;
 
