@@ -1,0 +1,6 @@
+main {
+    min-height: 100dvh;
+    width: 100dvw;
+    position: relative;
+    margin-bottom: 100px;
+}
